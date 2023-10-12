@@ -1,0 +1,42 @@
+RegisteredUser
+-----------------------
+userDatabase
+[phoneNumber,name]
+
+addContacts
+---------------------------
+userContacts
+[phoneNumber,[contactPhoneNumber,contactName]]
+
+importContacts
+--------------------
+List<String> hardcodedContacts = new ArrayList<>();
+        hardcodedContacts.add("John Doe, +1234567890");
+        hardcodedContacts.add("Jane Smith, +9876543210");
+        hardcodedContacts.add("Alice Johnson, +5555555555");
+
+userContacts
+[phoneNumber,[contactPhoneNumber,contactName]]
+
+blockContact
+-------------------------------
+userBlockedContacts
+[userPhoneNumber,[contactToBlock]]
+
+reportSpam
+-------------------------------
+userSpamReports
+[userPhoneNumber,contactToReport]
+
+unblockContact
+--------------------------------
+userBlockedContacts
+[userPhoneNumber,[contactToBlock,contactBlock]]
+
+contactToUnblock
+[userPhoneNumber,[contactToBlock,contactBlock]]
+unblockChoice remove from contactToBlock List
+
+makeCall
+-------------------------
+
